@@ -1,0 +1,31 @@
+footer.footer 
+    picture
+        source(srcset=require("../../img/footer/footer-mob.webp") 
+            media="(max-width:650px)" 
+            type="image/webp")
+        source(srcset=require("../../img/footer/footer-mob.jpg") 
+            media="(max-width:650px)")
+        source(srcset=require("../../img/footer/footer-bg.webp") 
+            type="image/webp")
+        img(src=require("../../img/footer/footer-bg.jpg") 
+            alt="bg" 
+            class="footer__background-image")
+    .container 
+        .footer__content
+            img(
+                src=require("../../img/icons/logo.png") 
+                alt="logo" 
+                class="footer__logo-image"
+            ) 
+            form(action="#" 
+                 class="footer__form")
+                .footer__form-info
+                    h2.footer__form-title Остались вопросы?
+                    p.footer__form-desc Получите подробную консультацию у менеджера 
+                input.footer__form-input(
+                    name="phone"
+                    placeholder="+_ (___) ___ __-__"
+                    type="tel"
+                )
+                button(class="footer__button" type="submit") Задать вопрос
+

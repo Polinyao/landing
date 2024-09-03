@@ -1,0 +1,13 @@
+@import 'mixins/fonts';
+
+@font-face {
+    font-family: Arial;
+    src: url(../fonts/Arial_regular.ttf) format(opentype);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Arial;
+    src: url(../fonts/Arial_bold.ttf) format(opentype);
+    font-weight: 700;
+}

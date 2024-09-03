@@ -1,0 +1,43 @@
+section.hero
+  div.hero__bg-mask
+  picture
+    source(srcset=require("../../img/hero/hero-mob.webp") 
+          media="(max-width:650px)" 
+          type="image/webp")
+    source(srcset=require("../../img/hero/hero-mob.jpg") 
+          media="(max-width:650px)")
+    source(srcset=require("../../img/hero/hero-bg.webp") 
+          type="image/webp")
+    img(src=require("../../img/hero/hero-bg.jpg") 
+        alt="bg" 
+        class="hero__background-image")
+  div.container 
+    div.hero__content 
+      div.hero__content-left
+        div.hero__left-top
+          h1.hero__title Купить <br> мини-погрузчик JCB
+          h3.hero__subtitle Универсальная техника для ваших задач
+        div.hero__left-bottom
+          p.hero__text под заказ 40 дней          
+      div.hero__content-right
+        .hero__form-info
+          h2.hero__form-title Получить прайс-лист на действующий модельный ряд
+          p.hero__form-text Отправим предложение на почту или What'sApp
+        form(action="#" 
+             class="hero__form") 
+          input.hero__form-input(
+            name="name"
+            placeholder="имя или название компании"
+            type="text"
+          )
+          input.hero__form-input(
+            name="email"
+            placeholder="адрес электронной почты"
+            type="text"
+          )
+          input.hero__form-input(
+            name="phone"
+            placeholder="+_ (___) ___ __-__"
+            type="tel"
+          )
+          button(class="hero__button") Получить прайс

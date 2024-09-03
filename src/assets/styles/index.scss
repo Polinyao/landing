@@ -1,0 +1,15 @@
+@import 'mixins/fonts';
+@import 'mixins/visually-hidden';
+@import 'vars';
+@import 'fonts';
+@import 'core';
+
+// Components
+
+@import '../components/header/header';
+@import '../components/hero/hero';
+@import '../components/models/models';
+@import '../components/footer/footer';
+@import '../components/modals/modal.scss';
+
+// Sections

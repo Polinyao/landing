@@ -1,0 +1,133 @@
+.hero {
+    position: relative;
+    margin-top: 80px;
+
+    @media(max-width:480px){
+      margin-top: 50px;
+    }
+
+    &__background-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      object-fit: cover;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 124px;
+      padding-bottom: 150px;
+
+      @media(max-width:750px){
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 50px;
+      }
+    }
+
+    &__content-left {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--font-white);
+    }
+
+    &__bg-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 55%;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.78);
+      z-index: -1;
+
+      @media(max-width: 1100px){
+        max-width: calc(55% - 75px);
+      }
+
+      @media(max-width:750px){
+        background: none;
+      }
+    }
+
+    &__subtitle {
+      margin-top: 10px;
+    }
+
+    &__text {
+      font-size: 25px;
+      @media(max-width:480px){
+        font-size: 14px;
+      }
+    }
+
+    &__content-right {
+      max-width: 460px;
+      width: 100%;
+      padding: 20px;
+      backdrop-filter: blur(37px);
+      background: rgba(0, 0, 0, 0.47);
+      text-align: left;
+      @media(max-width:480px){
+        margin-top: 264px;
+      }
+    }
+  
+    &__form-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      max-width: 320px;
+      @media(max-width:480px){
+        max-width: 235px;
+      }
+    }
+  
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 420px;
+      margin-top: 20px;
+
+      & input {
+        padding: 10px 25px;
+        background: none;
+        border: 1px solid var(--font-white);
+      }
+
+      & input::placeholder {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--font-white);
+        opacity: 0.5;
+        @media(max-width:480px){
+          font-size: 14px;
+        }
+      }
+    }
+
+    &__button {
+      max-width: 420px;
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--font-black);
+      background: var(--accent);
+      border: none;
+      @media(max-width:480px){
+        padding: 17px;
+        font-size: 16px;
+      }
+    }
+}

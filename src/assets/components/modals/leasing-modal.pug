@@ -1,0 +1,16 @@
+.modal-overlay(data-js="modal-leasing")  
+    .modal-body
+        .modal-close 
+            img(
+                src=require("../../img/icons/close.svg")  
+                alt="close icon"
+            )
+        p.modal-title(data-js=modal-title) Оставьте заявку на мини-погрузчик JCB
+        p.modal-text 
+         | Специалист перезвонит вам в ближайшее время и предоставит информацию по условиям лизинга
+        form.modal-form
+            input.modal-input(type="text" placeholder="+_ (___) ___ - ____")
+            button.modal-button(
+                type="submit"
+                class="modal-button"
+            ) Оставить заявку

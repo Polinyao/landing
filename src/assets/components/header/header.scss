@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 26px 0;
+  z-index: 1;
+  background: var(--accent);
+  @media (max-width: 480px) {
+    padding: 14px 0;
+  }
+  
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-image {
+    max-width: 91px;
+    @media (max-width: 480px) {
+      max-width: 67px;
+    }
+  }
+
+  &__telephone { 
+    &-link {
+      color: var(--font-black);
+      text-align: right;
+      font-size: 20px;
+      font-weight: 700;
+      @media (max-width: 480px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
