@@ -4,7 +4,7 @@
 ## Запуск проекта
 
 ```
-  npm istall
+  npm install
 ```
 
 ```
